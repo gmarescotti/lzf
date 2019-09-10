@@ -52,7 +52,7 @@
  * For best compression, use 15 or 16 (or more, up to 22).
  */
 #ifndef HLOG
-# define HLOG 16
+# define HLOG 14
 #endif
 
 /*
@@ -72,7 +72,7 @@
  * possibly disable this for text data.
  */
 #ifndef ULTRA_FAST
-# define ULTRA_FAST 0
+# define ULTRA_FAST 1
 #endif
 
 /*

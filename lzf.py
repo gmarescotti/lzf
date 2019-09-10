@@ -178,7 +178,7 @@ class Writer(io.RawIOBase):
             ffi.from_buffer(self._buf), us,
             ffi.from_buffer(self._dest), MAX_CHUNK
         )
-        if cs > us:
+        if cs > us and False: # GGG Force
             HDR_U.pack_into(self._hdr_u, 3, us)
             self._outfile.write(self._hdr_u)
             self._outfile.write(memoryview(self._buf)[:us])
